@@ -1,0 +1,40 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		
+            {
+
+                string sdate;
+                string edate;
+				/* sdate variable is start date and edate variable is end date are declared as string data type*/
+				
+                DateTime csdate;
+                DateTime cedate;
+				/* csdate variable is converted start date and cedate variable is converted end date are declared as DateTime data type*/
+				
+                Console.WriteLine("Enter start date in yy m d h:mm");
+                sdate = Console.ReadLine();
+				/* Getting input of start date from user */
+				
+                csdate = Convert.ToDateTime(sdate);
+				/* Converting string type user input into date format*/
+				
+                Console.WriteLine("Enter end date in yy m d h:mm");
+                edate = Console.ReadLine();
+			    /* Getting input of end date from user */	
+			
+                cedate = Convert.ToDateTime(edate);
+				/* Converting string type user input into date format*/ 
+
+                Console.WriteLine(cedate - csdate);
+				/* Finding the difference between end date and start date*/
+				
+				
+                Console.ReadLine();
+
+            }
+        }
+    }
